@@ -45,12 +45,4 @@ public @interface Instance {
      *         Java reserved words. Can not be empty
      */
     String id();
-    /**
-     * Documentation string attached to the instance definition, specified in {@code doc}
-     * KSY element.
-     *
-     * @return Documentation string for an instance. If documentation is missed,
-     *         returns empty string
-     */
-    String doc();
 }

@@ -44,19 +44,11 @@ public @interface SeqItem {
      * @return Identifier, that can differ from field name, if it clash with
      *         Java reserved words. Empty string, if attribute was unnamed
      */
-    String id();
+    String id() default "";
     /**
      * Index of an attribute in sequence of attributes in the type.
      *
      * @return 0-based index of an attribute in {@code seq} KSY element
      */
     int index();
-    /**
-     * Documentation string attached to the attribute, specified in {@code doc}
-     * KSY element.
-     *
-     * @return Documentation string for and attribute. If documentation is missed,
-     *         returns empty string
-     */
-    String doc();
 }

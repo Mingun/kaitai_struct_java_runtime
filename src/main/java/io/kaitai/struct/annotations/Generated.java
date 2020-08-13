@@ -92,11 +92,4 @@ public @interface Generated {
      *         by class constructors and {@code false}, if it must be called explicitly
      */
     boolean autoRead();
-    /**
-     * Documentation string attached to the type definition, specified in {@code doc}
-     * KSY element.
-     *
-     * @return Documentation string for a type. If documentation is missed, returns empty string
-     */
-    String doc();
 }

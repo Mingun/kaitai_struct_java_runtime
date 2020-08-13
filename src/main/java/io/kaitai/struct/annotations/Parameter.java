@@ -51,12 +51,4 @@ public @interface Parameter {
      * @return 0-based index of a parameter in {@code params} KSY element
      */
     int index();
-    /**
-     * Documentation string attached to the parameter, specified in {@code doc}
-     * KSY element.
-     *
-     * @return Documentation string for parameter. If documentation is missed,
-     *         returns empty string
-     */
-    String doc();
 }
